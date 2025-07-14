@@ -10,7 +10,7 @@ test('Add new book product', async ({ page }) => {
   await page.waitForTimeout(3000); 
   await productPage.clickAddProduct();
   await page.waitForTimeout(3000);
-  await productPage.fillProductTitle('Blockchain-MLAI18 Books');
+  await productPage.fillProductTitle('Blockchain-MLAI21 Books');
   await productPage.fillProductName('Java File');
   await productPage.selectCategory('Books');
   await productPage.fillRating('2');
@@ -25,5 +25,5 @@ test('Add new book product', async ({ page }) => {
   await productPage.fillImageUrl('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vecteezy.com%2Ffree-photos%2Fbooks&psig=AOvVaw2bU9EZlCSKCABj-RxKLGAN&ust=1752566106512000&source=images&cd=vfe&opi=89978449&ved=0CBUQjhxqFwoTCPCP4tPvu44DFQAAAAAdAAAAABAE');
   await productPage.saveProduct();
 
-  //await page.close();
+  await page.close();
 });

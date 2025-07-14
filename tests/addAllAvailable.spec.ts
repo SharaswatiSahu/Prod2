@@ -16,5 +16,5 @@ test('Add all available products to cart', async ({ page }) => {
     
   }
   
-  //await page.close();
+ // await page.close();
 });
